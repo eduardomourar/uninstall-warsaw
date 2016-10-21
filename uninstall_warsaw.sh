@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Usage: Place in the desktop
+#        cd ~/Desktop
+#        sudo ./uninstall_warsaw.sh
+
 echo "Removing certificates..."
 security delete-certificate -c "127.0.0.1" -t /Library/Keychains/System.keychain
 security delete-certificate -c "Warsaw Personal CA" -t /Library/Keychains/System.keychain
